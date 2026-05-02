@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Blue rounded background -->
+  <rect width="32" height="32" rx="7" fill="#2563EB"/>
+  <!-- Stacked layers icon (matches nav logo) in white -->
+  <g transform="translate(6, 6)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M10 2L2 6l8 4 8-4-8-4z"/>
+    <path d="M2 14l8 4 8-4"/>
+    <path d="M2 10l8 4 8-4"/>
+  </g>
+</svg>
