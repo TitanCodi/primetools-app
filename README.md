@@ -11,34 +11,16 @@ Landing page and portal hub for [PrimeTools.app](https://primetools.app), linkin
 | `terms.html` | Terms of Use |
 | `sitemap.xml` | XML sitemap for SEO |
 | `robots.txt` | Search engine crawl directives |
-| `vercel.json` | Vercel deployment config (headers, redirects, clean URLs) |
+| `404.html` | Custom 404 page (noindex, no ads), served by Cloudflare Pages for unknown URLs |
+| `_headers` | Cloudflare Pages response headers (X-Frame-Options, Permissions-Policy, HSTS) |
+| `_redirects` | Cloudflare Pages path redirects (/home → /) |
 
-## Deploy to GitHub + Vercel
+## Deployment
 
-### 1. Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: PrimeTools.app hub"
-git remote add origin https://github.com/YOUR_USERNAME/primetools-app.git
-git push -u origin main
-```
-
-### 2. Deploy on Vercel
-
-1. Go to [vercel.com](https://vercel.com) → **Add New Project**
-2. Import your GitHub repo
-3. **Framework Preset**: Other (static site — no build step needed)
-4. **Build Command**: *(leave blank)*
-5. **Output Directory**: `.` (root)
-6. Click **Deploy**
-
-### 3. Add Custom Domain
-
-In Vercel project → **Settings → Domains** → add `primetools.app`
-
-Follow Vercel's DNS instructions (typically add an A record + CNAME to your domain registrar).
+- Hosted on Cloudflare Pages, project `primetools-app`, connected to GitHub `TitanCodi/primetools-app` and auto-deploying from `main`.
+- Domains (`primetools.app`, `www.primetools.app`) are managed in Cloudflare.
+- Workflow: branch off `main`, push, open a PR, check the preview at `<branch-with-dashes>.primetools-app.pages.dev`, merge, and production redeploys.
+- No build step: the repo root is served as-is.
 
 ## AdSense Setup
 
