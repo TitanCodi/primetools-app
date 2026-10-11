@@ -619,6 +619,7 @@
     }
 
     .tool-card {
+      scroll-margin-top: 80px;
       background: var(--white);
       border: 1.5px solid var(--border);
       border-radius: var(--radius);
@@ -791,7 +792,7 @@
     /* FIX 6: Footer uses auto columns so new sites just extend the list */
     .footer-top {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
       gap: 48px;
       padding-bottom: 40px;
       border-bottom: 1px solid rgba(255,255,255,.1);
@@ -914,10 +915,10 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="nav-dropdown-menu" role="menu">
-          <a href="https://mortgagetools.app" target="_blank" rel="noopener" role="menuitem"><span class="tool-dot"></span>MortgageTools.app</a>
-          <a href="https://personalfinancetools.app" target="_blank" rel="noopener" role="menuitem"><span class="tool-dot"></span>PersonalFinanceTools.app</a>
-          <a href="https://gpatools.app" target="_blank" rel="noopener" role="menuitem"><span class="tool-dot"></span>GPATools.app</a>
-          <a href="https://bmitools.app" target="_blank" rel="noopener" role="menuitem"><span class="tool-dot"></span>BMITools.app</a>
+          <a href="https://mortgagetools.app" target="_blank" rel="nofollow noopener" role="menuitem"><span class="tool-dot"></span>MortgageTools.app</a>
+          <a href="https://personalfinancetools.app" target="_blank" rel="nofollow noopener" role="menuitem"><span class="tool-dot"></span>PersonalFinanceTools.app</a>
+          <a href="https://gpatools.app" target="_blank" rel="nofollow noopener" role="menuitem"><span class="tool-dot"></span>GPATools.app</a>
+          <a href="https://bmitools.app" target="_blank" rel="nofollow noopener" role="menuitem"><span class="tool-dot"></span>BMITools.app</a>
         </div>
       </li>
       <li><a href="#tools" class="nav-cta">Explore Tools →</a></li>
@@ -932,10 +933,10 @@
   <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
     <a href="#tools">All Tools</a>
     <div class="mobile-menu-section">Our Sites</div>
-    <a href="https://mortgagetools.app" target="_blank" rel="noopener">MortgageTools.app</a>
-    <a href="https://personalfinancetools.app" target="_blank" rel="noopener">PersonalFinanceTools.app</a>
-    <a href="https://gpatools.app" target="_blank" rel="noopener">GPATools.app</a>
-    <a href="https://bmitools.app" target="_blank" rel="noopener">BMITools.app</a>
+    <a href="https://mortgagetools.app" target="_blank" rel="nofollow noopener">MortgageTools.app</a>
+    <a href="https://personalfinancetools.app" target="_blank" rel="nofollow noopener">PersonalFinanceTools.app</a>
+    <a href="https://gpatools.app" target="_blank" rel="nofollow noopener">GPATools.app</a>
+    <a href="https://bmitools.app" target="_blank" rel="nofollow noopener">BMITools.app</a>
   </div>
 </nav>
 
@@ -949,21 +950,21 @@
 
   <!-- FIX 3: Reduced from 10 chips to 5, one per primary intent -->
   <div class="fade-up-3">
-    <div class="intent-label">What are you trying to figure out?</div>
+    <div class="intent-label">Pick your goal to see the right tools</div>
     <div class="intent-chips">
-      <a href="https://mortgagetools.app" target="_blank" rel="noopener" class="chip">
+      <a href="#mortgage" class="chip">
         <span class="chip-icon">🏠</span> Mortgage payment
       </a>
-      <a href="https://personalfinancetools.app" target="_blank" rel="noopener" class="chip">
+      <a href="#finance" class="chip">
         <span class="chip-icon">💳</span> Budget or debt
       </a>
-      <a href="https://personalfinancetools.app" target="_blank" rel="noopener" class="chip">
+      <a href="#finance" class="chip">
         <span class="chip-icon">📈</span> Savings & retirement
       </a>
-      <a href="https://gpatools.app" target="_blank" rel="noopener" class="chip">
+      <a href="#gpa" class="chip">
         <span class="chip-icon">🎓</span> GPA calculator
       </a>
-      <a href="https://bmitools.app" target="_blank" rel="noopener" class="chip">
+      <a href="#bmi" class="chip">
         <span class="chip-icon">⚖️</span> BMI & healthy weight
       </a>
     </div>
@@ -1014,7 +1015,7 @@
       <!-- FIX 1+2: tool-name is an h3, added keyword-rich body copy paragraph -->
 
       <!-- Mortgage -->
-      <a href="https://mortgagetools.app" target="_blank" rel="noopener" class="tool-card">
+      <a id="mortgage" href="https://mortgagetools.app" target="_blank" rel="noopener" class="tool-card">
         <div>
           <div class="tool-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1039,7 +1040,7 @@
       </a>
 
       <!-- Personal Finance -->
-      <a href="https://personalfinancetools.app" target="_blank" rel="noopener" class="tool-card">
+      <a id="finance" href="https://personalfinancetools.app" target="_blank" rel="noopener" class="tool-card">
         <div>
           <div class="tool-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1064,7 +1065,7 @@
       </a>
 
       <!-- GPA -->
-      <a href="https://gpatools.app" target="_blank" rel="noopener" class="tool-card">
+      <a id="gpa" href="https://gpatools.app" target="_blank" rel="noopener" class="tool-card">
         <div>
           <div class="tool-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1089,7 +1090,7 @@
       </a>
 
       <!-- BMI -->
-      <a href="https://bmitools.app" target="_blank" rel="noopener" class="tool-card">
+      <a id="bmi" href="https://bmitools.app" target="_blank" rel="noopener" class="tool-card">
         <div>
           <div class="tool-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1190,10 +1191,7 @@
     <h2 class="section-title" style="margin: 0 auto 16px;">Pick a tool and start calculating</h2>
     <p class="section-sub" style="margin: 0 auto 40px;">No account. No cost. Just answers.</p>
     <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
-      <a href="https://mortgagetools.app" target="_blank" rel="noopener" class="btn-primary">🏠 Mortgage Calculator</a>
-      <a href="https://personalfinancetools.app" target="_blank" rel="noopener" class="btn-secondary">Finance Tools</a>
-      <a href="https://gpatools.app" target="_blank" rel="noopener" class="btn-secondary">GPA Calculator</a>
-      <a href="https://bmitools.app" target="_blank" rel="noopener" class="btn-secondary">BMI Calculator</a>
+      <a href="#tools" class="btn-primary">Explore tools</a>
     </div>
   </div>
 </section>
@@ -1218,22 +1216,10 @@
       <div class="footer-col">
         <h4>Tool Sites</h4>
         <ul>
-          <li><a href="https://mortgagetools.app" target="_blank" rel="noopener">MortgageTools.app</a></li>
-          <li><a href="https://personalfinancetools.app" target="_blank" rel="noopener">PersonalFinanceTools.app</a></li>
-          <li><a href="https://gpatools.app" target="_blank" rel="noopener">GPATools.app</a></li>
-          <li><a href="https://bmitools.app" target="_blank" rel="noopener">BMITools.app</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Calculators</h4>
-        <ul>
-          <li><a href="https://mortgagetools.app" target="_blank" rel="noopener">Mortgage Payment</a></li>
-          <li><a href="https://mortgagetools.app" target="_blank" rel="noopener">Amortization</a></li>
-          <li><a href="https://personalfinancetools.app" target="_blank" rel="noopener">Budget Planner</a></li>
-          <li><a href="https://personalfinancetools.app" target="_blank" rel="noopener">Compound Interest</a></li>
-          <li><a href="https://gpatools.app" target="_blank" rel="noopener">GPA Calculator</a></li>
-          <li><a href="https://bmitools.app" target="_blank" rel="noopener">BMI Calculator</a></li>
+          <li><a href="https://mortgagetools.app" target="_blank" rel="nofollow noopener">MortgageTools.app</a></li>
+          <li><a href="https://personalfinancetools.app" target="_blank" rel="nofollow noopener">PersonalFinanceTools.app</a></li>
+          <li><a href="https://gpatools.app" target="_blank" rel="nofollow noopener">GPATools.app</a></li>
+          <li><a href="https://bmitools.app" target="_blank" rel="nofollow noopener">BMITools.app</a></li>
         </ul>
       </div>
 
