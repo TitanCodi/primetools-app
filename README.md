@@ -11,6 +11,11 @@ Landing page and portal hub for [PrimeTools.app](https://primetools.app), linkin
 | `terms.html` | Terms of Use |
 | `sitemap.xml` | XML sitemap for SEO |
 | `robots.txt` | Search engine crawl directives |
+| `favicon.svg` | SVG favicon (primary icon) |
+| `favicon-32.png` | 32×32 PNG favicon fallback |
+| `apple-touch-icon.png` | 180×180 iOS home screen icon (square corners; iOS rounds them) |
+| `favicon.ico` | Legacy multi-size favicon (16×16 and 32×32) |
+| `og-image.png` | 1200×630 social sharing image (Open Graph / Twitter card) |
 | `404.html` | Custom 404 page (noindex, no ads), served by Cloudflare Pages for unknown URLs |
 | `_headers` | Cloudflare Pages response headers (X-Frame-Options, Permissions-Policy, HSTS) |
 | `_redirects` | Cloudflare Pages path redirects (/home → /) |
@@ -40,7 +45,7 @@ Ad slots are already wired with publisher ID `ca-pub-2548921396153742`. Replace 
 - [x] robots.txt
 - [x] sitemap.xml
 - [x] Semantic HTML (h1 → h2 hierarchy)
-- [ ] Add real `og-image.png` (1200×630px) to repo root
+- [x] Add real `og-image.png` (1200×630px) to repo root
 - [ ] Update `sitemap.xml` lastmod dates when content changes
 - [ ] Submit sitemap in Google Search Console
 
