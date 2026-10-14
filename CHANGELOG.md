@@ -4,9 +4,8 @@ All notable changes to PrimeTools.app will be documented here.
 ## [1.5.0] - 2026-10-13
 
 ### Changed
-- "Why PrimeTools" cards show 4 across on desktop (they wrapped
-  3 + 1 at 1024px); 2×2 at 768px and 1 column at 480px as
-  before (#6)
+- "Why PrimeTools" cards show 4 across from 1024px (they wrapped
+  3 + 1 at 1024px), 2×2 below that and 1 column at 480px (#6)
 
 ### Removed
 - Three hidden placeholder ad units (fake slot IDs) and their
