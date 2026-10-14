@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to PrimeTools.app will be documented here.
 
+## [1.5.0] - 2026-10-13
+
+### Changed
+- "Why PrimeTools" cards show 4 across on desktop (they wrapped
+  3 + 1 at 1024px); 2×2 at 768px and 1 column at 480px as
+  before (#6)
+
+### Removed
+- Three hidden placeholder ad units (fake slot IDs) and their
+  `push()` calls, which logged console errors on every visit.
+  The AdSense loader stays; real units come after approval (#6)
+- Unused `.ad-slot` CSS (#6)
+
 ## [1.4.0] - 2026-10-13
 
 ### Added

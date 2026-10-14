@@ -594,26 +594,6 @@
       line-height: 1.7;
     }
 
-    /* ─── AD SLOT ─── */
-    .ad-slot {
-      background: var(--blue-light);
-      border: 1.5px dashed var(--blue-mid);
-      border-radius: var(--radius-sm);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      color: var(--blue);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .5px;
-      text-transform: uppercase;
-      overflow: hidden;
-    }
-
-    .ad-leaderboard { width: 100%; min-height: 90px; margin: 0 auto 48px; max-width: 728px; }
-    .ad-banner { width: 100%; min-height: 90px; margin: 48px auto 0; max-width: 728px; }
-    .ad-rectangle { width: 300px; min-height: 250px; margin: 0 auto; }
-
     /* ─── TOOL CARDS ─── */
     .tools-grid {
       display: grid;
@@ -747,7 +727,7 @@
 
     .why-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 24px;
       margin-top: 56px;
     }
@@ -873,7 +853,6 @@
       .tools-grid { grid-template-columns: 1fr; }
       .why-grid { grid-template-columns: 1fr 1fr; }
       .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
-      .ad-leaderboard, .ad-banner { max-width: 100%; }
     }
 
     @media (max-width: 480px) {
@@ -994,19 +973,6 @@
   </div>
 </header>
 
-<!-- ═══ AD SLOT: Leaderboard ═══ -->
-<div style="padding: 32px 24px 0; text-align:center;">
-  <div class="ad-slot ad-leaderboard">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2548921396153742"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-</div>
-
 <!-- ═══ TOOLS ═══ -->
 <section id="tools">
   <div class="section-inner">
@@ -1122,19 +1088,6 @@
   </div>
 </section>
 
-<!-- ═══ AD SLOT: Rectangle ═══ -->
-<div style="padding: 0 24px; text-align:center;">
-  <div class="ad-slot ad-rectangle">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2548921396153742"
-         data-ad-slot="0987654321"
-         data-ad-format="rectangle"
-         data-full-width-responsive="false"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-</div>
-
 <!-- ═══ WHY ═══ -->
 <section id="why" class="why-section">
   <div class="section-inner">
@@ -1174,19 +1127,6 @@
     </div>
   </div>
 </section>
-
-<!-- ═══ AD SLOT: Banner ═══ -->
-<div style="padding: 32px 24px 0; text-align:center;">
-  <div class="ad-slot ad-banner">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2548921396153742"
-         data-ad-slot="1122334455"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
-</div>
 
 <!-- FIX 5: Clearer CTA — Mortgage as primary, others secondary -->
 <section>
