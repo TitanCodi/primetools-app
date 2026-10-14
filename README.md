@@ -1,6 +1,6 @@
 # PrimeTools.app — Hub Landing Page
 
-Landing page and portal hub for [PrimeTools.app](https://primetools.app), linking to three specialized tool sites.
+Landing page and portal hub for [PrimeTools.app](https://primetools.app), linking to four specialized tool sites.
 
 ## Files
 
@@ -47,7 +47,7 @@ Ad slots are already wired with publisher ID `ca-pub-2548921396153742`. Replace 
 - [x] Semantic HTML (h1 → h2 hierarchy)
 - [x] Add real `og-image.png` (1200×630px) to repo root
 - [ ] Update `sitemap.xml` lastmod dates when content changes
-- [ ] Submit sitemap in Google Search Console
+- [x] Submit sitemap in Google Search Console
 
 ## Updating the Sitemap Date
 
