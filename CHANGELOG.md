@@ -1,6 +1,24 @@
 # Changelog
 All notable changes to PrimeTools.app will be documented here.
 
+## [1.4.0] - 2026-10-13
+
+### Added
+- Contact email (`hello@primetools.app`) on the Privacy and Terms
+  pages, replacing "contact us through our website" (#5)
+
+### Changed
+- Homepage title shortened to 57 characters; `og:title` and
+  `twitter:title` now match it (#5)
+- `og:description` and `twitter:description` unified at 108
+  characters (#5)
+- Lastmod bumped for `/privacy` and `/terms` (#5)
+- README: four tool sites (it said three); sitemap submission
+  ticked (#5)
+
+### Fixed
+- Footer CSS comment now describes the actual grid (#5)
+
 ## [1.3.0] - 2026-10-11
 
 ### Added
